@@ -1,0 +1,12 @@
+<odoo>
+  <data noupdate="1">
+    <record id="seq_fast_food_order" model="ir.sequence">
+      <field name="name">Fast Food Order</field>
+      <field name="code">fast.food.order</field>
+      <field name="prefix">FFTN-</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="company_id" eval="False"/> <!-- si multi-société -->
+    </record>
+  </data>
+</odoo>

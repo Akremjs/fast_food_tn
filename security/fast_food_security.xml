@@ -1,0 +1,19 @@
+<odoo>
+  <!-- Catégorie personnalisée -->
+  <record id="module_category_fast_food" model="ir.module.category">
+    <field name="name">Fast Food</field>
+    <field name="sequence">10</field>
+  </record>
+
+  <!-- Groupe manager -->
+  <record id="group_fast_food_manager" model="res.groups">
+    <field name="name">Manager Fast Food</field>
+    <field name="category_id" ref="fast_food_tn.module_category_fast_food"/>
+  </record>
+
+  <!-- Groupe utilisateur -->
+  <record id="group_fast_food_user" model="res.groups">
+    <field name="name">Utilisateur Fast Food</field>
+    <field name="category_id" ref="fast_food_tn.module_category_fast_food"/>
+  </record>
+</odoo>
